@@ -1,0 +1,42 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    min-height: 0;
+}
+
+.site-title {
+    text-align: center;
+    font-size: clamp(2.5rem, 8vw, 4.25rem);
+    font-weight: 700;
+    line-height: 1.12;
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    color: var(--babysitting-bar);
+}
+
+.book-button {
+    display: inline-block;
+    padding: 0.65rem 1.4rem;
+    border-radius: 0.5rem;
+    font-family: system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    background: var(--babysitting-bar);
+}
+
+.book-button:hover {
+    filter: brightness(1.08);
+}
